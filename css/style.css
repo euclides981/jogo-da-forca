@@ -1,0 +1,72 @@
+body {   
+    height: 100vh;
+  /*   background-image: url("../img/fundo.svg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+#inserir_palavra {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+#insere_palavra {
+    text-transform: uppercase;
+    font-size: 15pt;
+}
+#exibe_form {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+#exibe_palavra {
+    display: flex;
+    justify-content: center;
+    font-size: 20pt;
+    margin-top: 20px;
+}
+#txtErradas {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.letras_erradas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 10px;
+}
+tr {
+    font-size: 15pt;
+    /* text-transform: uppercase; */
+}
+.palavra_secreta {
+    background-color: bisque;
+}
+
+#chute {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#digita_chute {
+    color: yellowgreen;
+    outline: none;
+    width: 94px;
+    height: 94px;
+    font-size: 70pt;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+#bt_chute {
+  width: 100px;
+  height: 100px;
+  font-size: 15pt;
+}
+#boneco {
+    display: flex;
+    justify-content: center;
+}
