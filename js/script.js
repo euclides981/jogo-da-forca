@@ -9,9 +9,6 @@ var letrasInvalidas = []
 var palavrasUsuario = localStorage.getItem('palavrasInseridas')
 var palavrasParse = JSON.parse(palavrasUsuario)
 
-
-
-
 function inserirPalavra() {
     
     var insere = document.getElementById('insere_palavra').value
@@ -46,7 +43,6 @@ function inserirPalavra() {
 }
 document.getElementById('insere_palavra').value = ''
 }
-
 
 function sorteiaPalavra(){
     if(palavrasParse != null) {
@@ -116,7 +112,3 @@ function reiniciarJogo() {
 }
 
 /* document.onchange =  appendToStorage; */
-
- console.log('Palavra Sorteada: ' + palavraSorteada)
- console.log('Palavras: ' + palavras)
- console.log('Parse: ' + palavrasParse)
