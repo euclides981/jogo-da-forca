@@ -1,7 +1,9 @@
-var palavras = ['montanha', 'estrelas', 'estudante', 'javascript', 'passaro','paisagem']
+var palavras = ['montanha', 'money','estrelas', 'familia','estudante', 'javascript', 'passaro','paisagem', 'vida', 'frio', 'palmeiras', 'corinthians']
 var palavrasInseridas = []
 var exibe = document.getElementById('exibe_palavra')
 var chute = document.getElementById('digita_chute')
+var campoVazio = document.getElementById('campoVazio')
+var ultimaChance = document.getElementById('ultimaChance')
 document.getElementById('digita_chute').focus()
 var letrasErradas = []
 var letrasCorretas = []
@@ -12,7 +14,7 @@ var palavrasParse = JSON.parse(palavrasUsuario)
 function inserirPalavra() {
     
     var insere = document.getElementById('insere_palavra').value
-   
+    
     if (palavras.indexOf(insere)  != - 1) {
         
         console.log("Já existe essa palavra");  
@@ -80,35 +82,73 @@ function mostrarLetrasErradas() {
 }
 
 function verifica() {
-    if(chute.value == '') {
-        console.log('Digiteuma letra para Jogar')
-        letrasInvalidas.push(chute.value)
+    campoVazio.innerHTML = ''
+    var chuteUp = chute.value.toUpperCase()
+    if(chuteUp == '') {
+        campoVazio.innerHTML = 'Digite uma letra para Jogar'
+    }else if(palavraSorteada.split('').indexOf(chuteUp) != -1 && letrasCorretas.indexOf(chuteUp) == -1) {
+        letrasCorretas.push(chuteUp)
+    } else if(palavraSorteada.split('').indexOf(chuteUp) == -1 && letrasErradas.indexOf(chuteUp) == -1) {
+        letrasErradas.push(chuteUp)
     }
-    else if (palavraSorteada.split('').indexOf(chute.value) != -1) {
-        letrasCorretas.push(chute.value)
+    if(letrasErradas.length == 5) {
+        ultimaChance.innerHTML = 'Só resta uma chance'
     }
-    else {
-        letrasErradas.push(chute.value)
-    }
+    
     mostrarLetrasCertas()
     mostrarLetrasErradas()
-    checarJogo()       
+    checarJogo()
+    desenharForca() 
+    console.log('CORRETAS: ' + letrasCorretas)
+    console.log('ERRADAS: ' + letrasErradas)
+    console.log('INVALIDAS: '+ letrasInvalidas)
     chute.value =''
     document.getElementById('digita_chute').focus()
 }
 
 function checarJogo() {
     var secreta = document.querySelector('#exibe_palavra')
-
+    
     if(letrasErradas.length == 6 ) {
-    alert('Fim de Jogo! Você Perdeu.')
-}
-if(palavraSorteada === secreta.innerHTML) {
+        console.log('Fim de Jogo! Você Perdeu.')
+    }
+    if(palavraSorteada == secreta.innerHTML) {
     alert('Parabéns! Você Ganhou.')
 }
 }
+
+function desenharForca() {
+    switch(letrasErradas.length){
+        case  0:
+            document.getElementById('trocaImg').src="img/forca.svg"
+            break
+            case 1:
+            document.getElementById('trocaImg').src="img/forca2.svg"
+            break
+            case 2:
+            document.getElementById('trocaImg').src="img/forca3.svg"
+            break
+            case 3:
+            document.getElementById('trocaImg').src="img/forca4.svg"
+            break
+            case 4:
+            document.getElementById('trocaImg').src="img/forca5.svg"
+            break
+            case 5:
+            document.getElementById('trocaImg').src="img/forca6.svg"
+            break
+            case 6:
+            document.getElementById('trocaImg').src="img/forca7.svg"
+            break
+            case 6:
+            document.getElementById('trocaImg').src="img/forca7.svg"
+            break
+    }
+}
+
 function reiniciarJogo() {
     window.location.reload()
 }
+
 
 /* document.onchange =  appendToStorage; */

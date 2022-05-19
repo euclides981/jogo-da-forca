@@ -9,7 +9,7 @@
     </head>
     <body>
         <div id="boneco">
-            <img src="img/forca.svg" width="250px" alt="">
+            <img src="img/forca.svg" width="250px" alt="" id="trocaImg">
         </div>
         <div id="exibe_palavra"></div>
         <div id="chute">
@@ -17,7 +17,9 @@
             <button onclick="verifica()" type="submit" id="bt_chute">CHUTAR</button>
         </div>
         
-        <div id="txtErradas">Letras Erradas</div>
+        <div id="campoVazio" class="alerta"></div>
+        <div id="ultimaChance" class="alerta"></div>
+        <div id="txtErradas"></div>
         <div class="letras_erradas"></div>
         <br><br>
         <div id="exibe_form">

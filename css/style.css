@@ -25,6 +25,13 @@
     margin-top: 10px;
 
 }
+.alerta {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
 .letras_erradas {
     display: flex;
     justify-content: center;
@@ -61,3 +68,6 @@
     display: flex;
     justify-content: center;
 }
+.boneco {
+    display: none;
+  }
