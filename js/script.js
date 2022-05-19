@@ -1,10 +1,10 @@
 var palavras = ['montanha', 'money','estrelas', 'familia','estudante', 'javascript', 'passaro','paisagem', 'vida', 'frio', 'palmeiras', 'corinthians']
+document.getElementById('digita_chute').focus()
 var palavrasInseridas = []
 var exibe = document.getElementById('exibe_palavra')
 var chute = document.getElementById('digita_chute')
 var campoVazio = document.getElementById('campoVazio')
 var ultimaChance = document.getElementById('ultimaChance')
-document.getElementById('digita_chute').focus()
 var letrasErradas = []
 var letrasCorretas = []
 var letrasInvalidas = []
@@ -150,9 +150,7 @@ function reiniciarJogo() {
     window.location.reload()
 }
 
-
 /* document.onchange =  appendToStorage; */
-
 
 $('#digita_chute').keypress(function(e) {
     var keyCode = (e.keyCode ? e.keyCode : e.which); 
@@ -161,3 +159,5 @@ $('#digita_chute').keypress(function(e) {
       alert('Letra Não Permitida')
     }
     });
+
+
