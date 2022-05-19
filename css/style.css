@@ -26,6 +26,7 @@
 
 }
 .alerta {
+    color: red;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
