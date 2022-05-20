@@ -1,6 +1,9 @@
-var palavras = ['montanha', 'money','estrelas', 'familia','estudante', 'javascript', 'passaro','paisagem', 'vida', 'frio', 'palmeiras', 'corinthians']
 document.getElementById('digita_chute').focus()
-var palavrasInseridas = []
+var palavras = ['montanha', 'money','estrelas', 'familia','estudante', 'javascript', 'passaro','paisagem', 'vida', 'frio', 'palmeiras', 'corinthians']
+var erradas = document.querySelector('.letras_erradas')
+var esconde = document.querySelector('.esconde').style.display = 'block'
+var resultado = document.querySelector('#resultado').style.display = 'none'
+var informa = document.getElementById('informa')
 var exibe = document.getElementById('exibe_palavra')
 var chute = document.getElementById('digita_chute')
 var campoVazio = document.getElementById('campoVazio')
@@ -8,6 +11,7 @@ var ultimaChance = document.getElementById('ultimaChance')
 var letrasErradas = []
 var letrasCorretas = []
 var letrasInvalidas = []
+var palavrasInseridas = []
 var palavrasUsuario = localStorage.getItem('palavrasInseridas')
 var palavrasParse = JSON.parse(palavrasUsuario)
 
@@ -74,31 +78,32 @@ function mostrarLetrasCertas() {
 }
 
 function mostrarLetrasErradas() {
-    var erradas = document.querySelector('.letras_erradas')
-    erradas.innerHTML = ``
+    
+    erradas.innerHTML = `&nbsp;`
     letrasErradas.forEach(letra => {
         erradas.innerHTML += `${letra}`
     })
 }
 
 function verifica() {
-    campoVazio.innerHTML = ''
+    campoVazio.innerHTML = `&nbsp;`
+
     var chuteUp = chute.value.toUpperCase()
     if(chuteUp == '') {
-        campoVazio.innerHTML = 'Digite uma letra para Jogar'
+        campoVazio.innerHTML = 'Digite uma letra'
     }else if(palavraSorteada.split('').indexOf(chuteUp) != -1 && letrasCorretas.indexOf(chuteUp) == -1) {
         letrasCorretas.push(chuteUp)
     } else if(palavraSorteada.split('').indexOf(chuteUp) == -1 && letrasErradas.indexOf(chuteUp) == -1) {
         letrasErradas.push(chuteUp)
     }
     if(letrasErradas.length == 5) {
-        ultimaChance.innerHTML = 'Só resta uma chance'
+        ultimaChance.innerHTML = 'Resta uma chance'
     }
     
     mostrarLetrasCertas()
     mostrarLetrasErradas()
-    checarJogo()
     desenharForca() 
+    checarJogo()
     console.log('CORRETAS: ' + letrasCorretas)
     console.log('ERRADAS: ' + letrasErradas)
     console.log('INVALIDAS: '+ letrasInvalidas)
@@ -106,16 +111,31 @@ function verifica() {
     document.getElementById('digita_chute').focus()
 }
 
+
 function checarJogo() {
     var secreta = document.querySelector('#exibe_palavra')
     
     if(letrasErradas.length == 6 ) {
-        console.log('Fim de Jogo! Você Perdeu.')
+        document.querySelector('.esconde').style.display = 'none'
+        document.querySelector('#resultado').style.display = 'block'
+        informa.innerHTML = `Que pena...<br>Não acertou a palavra secreta:
+        <br>${palavraSorteada}<br>0${letrasErradas.length} palpites errados
+        <br>0${letrasCorretas.length} palpites corretos<br>
+        Total de tentativas: ${letrasCorretas.length + letrasErradas.length}
+        <br> Jogue Novamente.`
     }
     if(palavraSorteada == secreta.innerHTML) {
-    alert('Parabéns! Você Ganhou.')
+        document.getElementById('trocaImg').src="img/forcaV.svg"
+        document.querySelector('.esconde').style.display = 'none'
+        document.querySelector('#resultado').style.display = 'block'
+        informa.innerHTML = `Parabéns...<br>Você acertou a palavra secreta:
+        <br>${palavraSorteada}<br>Teve: ${letrasErradas.length} chutes errados.
+        <br>Teve: ${letrasCorretas.length} chutes corretos<br>
+        Total de tentativas: ${letrasCorretas.length + letrasErradas.length}
+        <br> Jogue Novamente.`
+    }
 }
-}
+desenharForca()
 
 function desenharForca() {
     switch(letrasErradas.length){
@@ -159,5 +179,4 @@ $('#digita_chute').keypress(function(e) {
       alert('Letra Não Permitida')
     }
     });
-
-
+    
