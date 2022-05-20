@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 body {
     margin: 0;
+    background-color: rgb(223, 214, 211);
+    font-family: 'Oswald', sans-serif;
+    font-size: 14pt;
 }
 #inserir_palavra {
     display: flex;
@@ -15,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: left;
+    margin-top: 20px;
 }
 #exibe_palavra {
     display: flex;
@@ -31,12 +37,14 @@ body {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .letras_erradas {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20pt;
+    margin-top: 20px;
 }
 .palavra_secreta {
     background-color: bisque;
@@ -45,6 +53,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 20px;
 }
 #digita_chute {
     color: yellowgreen;
@@ -53,12 +62,14 @@ body {
     height: 33px;
     font-size: 20pt;
     text-align: center;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 #bt_chute {
+  font-family: 'Oswald', sans-serif;
   width: 70px;
   height: 40px;
   font-size: 10pt;
+  cursor: pointer;
 }
 #boneco {
     display: flex;
@@ -81,4 +92,32 @@ body {
     position: absolute;
     top: 50%;
     left: 33%;
+}
+.bt_novo_jogo {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+    background: #f09b41;
+    background-image: -webkit-linear-gradient(top, #f09b41, #d6be20);
+    background-image: -moz-linear-gradient(top, #f09b41, #d6be20);
+    background-image: -ms-linear-gradient(top, #f09b41, #d6be20);
+    background-image: -o-linear-gradient(top, #f09b41, #d6be20);
+    background-image: linear-gradient(to bottom, #f09b41, #d6be20);
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+.bt_novo_jogo:hover {
+    background: #e8a048;
+    text-decoration: none;
+    cursor: pointer;
+}
+#avisos {
+    text-align: center;
 }

@@ -15,18 +15,17 @@
                     <input type="text" name="" id="digita_chute" maxlength="1">
                     <button onclick="verifica()" type="submit" id="bt_chute">CHUTAR</button>
                 </div>
-                <div id="campoVazio" class="alerta">&nbsp;</div>
-                <div id="ultimaChance" class="alerta">&nbsp;</div>
-                <div class="letras_erradas">&nbsp;</div>
-                <div id="exibe_form">
-                    <button onclick="reiniciarJogo()" id="bt_novo_jogo">NOVO JOGO</button>
+                <div id="avisos">
+                    <button onclick="reiniciarJogo()" class="bt_novo_jogo">NOVO JOGO</button>
+                    <div id="campoVazio" class="alerta">&nbsp;</div>
+                    <div id="ultimaChance" class="alerta">&nbsp;</div>
+                    <div class="letras_erradas">&nbsp;</div>
                 </div>
             </div>
             <div id="resultado">
                 <div id="informa"></div>
-                <button onclick="reiniciarJogo()" id="bt_novo_jogo">NOVO JOGO</button>
+                <button onclick="reiniciarJogo()" class="bt_novo_jogo">Jogue Novamente</button>
             </div>
-            
         </div>
        <!--  <div id="inserir_palavra">
             <input id="insere_palavra" type="text" placeholder="">
