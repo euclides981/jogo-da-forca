@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background-color: rgb(223, 214, 211);
+    background-color: #dfd6d3;
     font-family: 'Oswald', sans-serif;
     font-size: 14pt;
 }
@@ -56,7 +56,11 @@ body {
     margin-top: 20px;
 }
 #digita_chute {
-    color: yellowgreen;
+    color: rgb(68, 17, 17);
+    font-weight: 700;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: #635d5b;
     outline: none;
     width: 70px;
     height: 33px;
@@ -66,10 +70,22 @@ body {
 }
 #bt_chute {
   font-family: 'Oswald', sans-serif;
+  color: #fff;
+  background-color: #d3cecc;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
   width: 70px;
   height: 40px;
   font-size: 10pt;
   cursor: pointer;
+  border: none;
+  letter-spacing: 0.2em;
+}
+#bt_chute:hover {
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0,0.3);
+    background: #dbd5d1;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    cursor: pointer;
 }
 #boneco {
     display: flex;
@@ -84,6 +100,8 @@ body {
     position: absolute;
     top: 50%;
     left: 33%;
+    width: 250px;
+    height: 350px;
 }
 .boneco {
     display: none;
@@ -92,6 +110,10 @@ body {
     position: absolute;
     top: 50%;
     left: 33%;
+    background-color: #ece7e1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
 }
 .bt_novo_jogo {
     font-family: 'Oswald', sans-serif;

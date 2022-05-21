@@ -11,9 +11,15 @@ var ultimaChance = document.getElementById('ultimaChance')
 var letrasErradas = []
 var letrasCorretas = []
 var letrasInvalidas = []
+
 var palavrasInseridas = []
 var palavrasUsuario = localStorage.getItem('palavrasInseridas')
 var palavrasParse = JSON.parse(palavrasUsuario)
+
+/* var teste = palavrasParse */
+/* var palavrasU = localStorage.getItem('palavrasInseridas') */
+
+
 
 function inserirPalavra() {
     
@@ -29,8 +35,8 @@ function inserirPalavra() {
     else {
 
         palavrasInseridas.push(insere)
-        
-        localStorage.setItem('palavrasInseridas', JSON.stringify(palavrasInseridas))
+
+        localStorage.setItem('palavrasInseridas', JSON.stringify(palavrasInseridas.concat(palavrasParse)))
         
        /*  var corpoTabela = document.querySelector('#tbody')
         
@@ -78,26 +84,34 @@ function mostrarLetrasCertas() {
 }
 
 function mostrarLetrasErradas() {
-    
-    erradas.innerHTML = `&nbsp;`
+    if(letrasErradas.length) {
+    erradas.innerHTML = `Letras Erradas:<br>`
     letrasErradas.forEach(letra => {
         erradas.innerHTML += `${letra}`
     })
 }
+}
 
 function verifica() {
     campoVazio.innerHTML = `&nbsp;`
-
     var chuteUp = chute.value.toUpperCase()
     if(chuteUp == '') {
         campoVazio.innerHTML = 'Digite uma letra'
-    }else if(palavraSorteada.split('').indexOf(chuteUp) != -1 && letrasCorretas.indexOf(chuteUp) == -1) {
+    }else if(palavraSorteada.split('').indexOf(chuteUp) != -1
+    && letrasCorretas.indexOf(chuteUp) == -1) {
         letrasCorretas.push(chuteUp)
-    } else if(palavraSorteada.split('').indexOf(chuteUp) == -1 && letrasErradas.indexOf(chuteUp) == -1) {
+    } 
+    else if (letrasCorretas.indexOf(chuteUp) != -1) {
+        campoVazio.innerHTML = 'Já acertou essa Letra'
+    }
+    else if(palavraSorteada.split('').indexOf(chuteUp) == -1
+    && letrasErradas.indexOf(chuteUp) == -1) {
         letrasErradas.push(chuteUp)
+    } else if (letrasErradas.indexOf(chuteUp) != -1) {
+        campoVazio.innerHTML = 'Já errou essa Letra'
     }
     if(letrasErradas.length == 5) {
-        ultimaChance.innerHTML = 'Resta uma chance'
+        campoVazio.innerHTML += '<br>Resta uma chance'
     }
     
     mostrarLetrasCertas()
