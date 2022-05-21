@@ -29,8 +29,13 @@
        <div id="inserir_palavra">
             <input id="insere_palavra" type="text" placeholder="">
             <button onclick="inserirPalavra()" type="submit">INSERIR</button>
+            <button id="opcaoUsuario"type="submit">Minhas palavras</button>
+            <button id="opcaoSistema"type="submit">Palavras do Sistema</button>
+            <button id="opcaoMisturada"type="submit">Misturado</button>
+            <button id="verPalavras"type="submit" onclick="mostraPalavras()">Ver Palavras</button>
         </div>
         <script src="js/script.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <table id="tbody"></table>
     </body>
 </html>

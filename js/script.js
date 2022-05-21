@@ -11,18 +11,29 @@ var ultimaChance = document.getElementById('ultimaChance')
 var letrasErradas = []
 var letrasCorretas = []
 var letrasInvalidas = []
-
 var palavrasInseridas = []
 var palavrasUsuario = localStorage.getItem('palavrasInseridas')
 var palavrasParse = JSON.parse(palavrasUsuario)
 
-/* var teste = palavrasParse */
-/* var palavrasU = localStorage.getItem('palavrasInseridas') */
+function mostraPalavras (){
+    
+var corpoTabela = document.querySelector('#tbody')
+    
+tbody.innerText = ''
 
+for (var pos = 0; pos < palavras.length; pos++) {
+    
+var tr = document.createElement('tr');
 
+corpoTabela.appendChild(tr);
+
+tr.innerHTML = palavras[pos]
+    
+}
+}
 
 function inserirPalavra() {
-    
+
     var insere = document.getElementById('insere_palavra').value
     
     if (palavras.indexOf(insere)  != - 1) {
@@ -36,29 +47,47 @@ function inserirPalavra() {
 
         palavrasInseridas.push(insere)
 
+        if(palavrasParse) {
+
         localStorage.setItem('palavrasInseridas', JSON.stringify(palavrasInseridas.concat(palavrasParse)))
-        
-       /*  var corpoTabela = document.querySelector('#tbody')
-        
-        tbody.innerText = ''
-        
-        for (var pos = 0; pos < palavras.length; pos++) {
-            
-        var tr = document.createElement('tr');
-        
-        corpoTabela.appendChild(tr);
-        
-        tr.innerHTML = palavras[pos]
-        
-    } */
-    
+    }
+    else {
+        localStorage.setItem('palavrasInseridas', JSON.stringify(palavrasInseridas))
+    }    
 }
 document.getElementById('insere_palavra').value = ''
 }
 
+let escolha = 0
+let botaoUsuario = document.getElementById('opcaoUsuario')
+botaoUsuario.addEventListener('click', ()=>{
+    escolha = 1
+    localStorage.setItem('Lista', escolha)
+    reiniciarJogo()
+})
+let botaoSistema = document.getElementById('opcaoSistema')
+botaoSistema.addEventListener('click', ()=>{
+    escolha = 0
+    localStorage.setItem('Lista', escolha)
+    reiniciarJogo()
+})
+let botaoMistura = document.getElementById('opcaoMisturada')
+botaoMistura.addEventListener('click', ()=>{
+    escolha = 2
+    localStorage.setItem('Lista', escolha)
+    reiniciarJogo()
+})
+retornoEscolha = localStorage.getItem('Lista')
+
+var misturado = palavrasParse.concat(palavras)
+
 function sorteiaPalavra(){
-    if(palavrasParse != null) {
+    if(palavrasParse != null && retornoEscolha == 1) {
     var sorteio = palavrasParse[Math.floor(Math.random() * palavrasParse.length)]
+}
+else if (retornoEscolha == 2) {
+    sorteio = misturado[Math.floor(Math.random() * misturado.length)]
+    console.log(misturado)
 }
 else {
     sorteio = palavras[Math.floor(Math.random() * palavras.length)]
@@ -125,7 +154,6 @@ function verifica() {
     document.getElementById('digita_chute').focus()
 }
 
-
 function checarJogo() {
     var secreta = document.querySelector('#exibe_palavra')
     
@@ -147,6 +175,7 @@ function checarJogo() {
         Total de tentativas: ${letrasCorretas.length + letrasErradas.length}`
     }
 }
+
 desenharForca()
 
 function desenharForca() {
@@ -182,8 +211,6 @@ function reiniciarJogo() {
     window.location.reload()
 }
 
-/* document.onchange =  appendToStorage; */
-
 $('#digita_chute').keypress(function(e) {
     var keyCode = (e.keyCode ? e.keyCode : e.which); 
     if (!(keyCode > 64 && keyCode < 91 || keyCode > 96 && keyCode < 123)) {
@@ -191,4 +218,3 @@ $('#digita_chute').keypress(function(e) {
       alert('Letra Não Permitida')
     }
     });
-    
