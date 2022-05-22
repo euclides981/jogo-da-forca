@@ -6,24 +6,12 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 14pt;
 }
-#inserir_palavra {
-    display: flex;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-}
 #insere_palavra {
     text-transform: uppercase;
-    font-size: 15pt;
-}
-#exibe_form {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    margin-top: 20px;
+    text-align: center;
+    color: #416ac2;
+    font-weight: 700;
+    
 }
 #exibe_palavra {
     display: flex;
@@ -50,9 +38,6 @@ body {
     font-size: 20pt;
     margin-top: 5px;
 }
-.palavra_secreta {
-    background-color: bisque;
-}
 #chute {
     display: flex;
     justify-content: center;
@@ -72,25 +57,7 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-#bt_chute {
-  font-family: 'Oswald', sans-serif;
-  color: #fff;
-  background-color: #d3cecc;
-  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
-  width: 70px;
-  height: 40px;
-  font-size: 10pt;
-  cursor: pointer;
-  border: none;
-  letter-spacing: 0.2em;
-}
-#bt_chute:hover {
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0,0.3);
-    background: #dbd5d1;
-    color: rgb(3, 3, 3);
-    text-decoration: none;
-    cursor: pointer;
-}
+
 #boneco {
     display: flex;
     justify-content: center;
@@ -102,17 +69,14 @@ body {
 }
 #flutua {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 33%;
     background-color: #ece7e1;
     box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     width: 250px;
-    height: 350px;
+    height: 340px;
 }
-.boneco {
-    display: none;
-  }
 #resultado {
     position: absolute;
     top: 50%;
@@ -122,31 +86,49 @@ body {
     border-radius: 5px;
     box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
 }
-.bt_novo_jogo {
-    font-family: 'Oswald', sans-serif;
-    margin-top: 10px;
-    background: #f09b41;
-    background-image: -webkit-linear-gradient(top, #f09b41, #d6be20);
-    background-image: -moz-linear-gradient(top, #f09b41, #d6be20);
-    background-image: -ms-linear-gradient(top, #f09b41, #d6be20);
-    background-image: -o-linear-gradient(top, #f09b41, #d6be20);
-    background-image: linear-gradient(to bottom, #f09b41, #d6be20);
-    -webkit-border-radius: 5;
-    -moz-border-radius: 5;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 1px 3px #666666;
-    -moz-box-shadow: 0px 1px 3px #666666;
-    box-shadow: 0px 1px 3px #666666;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 5px 10px 5px 10px;
-    text-decoration: none;
-}
-.bt_novo_jogo:hover {
-    background: #e8a048;
-    text-decoration: none;
-    cursor: pointer;
-}
 #avisos {
     text-align: center;
+}
+#inserir_palavra {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+#tes {
+    display: grid;    
+}
+#fundo_popup {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeede8;
+    width: 400px;
+    height: 270px;
+    border-radius: 10px;
+}
+#inputInserir {
+    display: flex;
+    gap: 5px;
+}
+.bts {
+    background-color: #416ac2;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-color:transparent;
+    text-transform: uppercase;
+}
+.bts:hover {
+    border-color: #fff;
+}
+#btmais {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }

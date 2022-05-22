@@ -13,27 +13,43 @@
                 <div id="exibe_palavra"></div>
                 <div id="chute">
                     <input type="text" name="" id="digita_chute" maxlength="1">
-                    <button onclick="verifica()" type="submit" id="bt_chute">CHUTAR</button>
+                    <button onclick="verifica()" type="submit" class="bts" id="bt_chute">CHUTAR</button>
                 </div>
                 <div id="avisos">
                     <div id="campoVazio" class="alerta">&nbsp;</div>
                     <div class="letras_erradas">&nbsp;</div>
-                    <button onclick="reiniciarJogo()" class="bt_novo_jogo">NOVO JOGO</button>
+                    <button onclick="reiniciarJogo()" class="bts">NOVO JOGO</button><br>
                 </div>
             </div>
             <div id="resultado">
                 <div id="informa"></div>
-                <button onclick="reiniciarJogo()" class="bt_novo_jogo">Jogue Novamente</button>
+                <button onclick="reiniciarJogo()" class="bts">Jogue Novamente</button>
             </div>
         </div>
-       <div id="inserir_palavra">
-            <input id="insere_palavra" type="text" placeholder="">
-            <button onclick="inserirPalavra()" type="submit">INSERIR</button>
-            <button id="opcaoUsuario"type="submit">Minhas palavras</button>
-            <button id="opcaoSistema"type="submit">Palavras do Sistema</button>
-            <button id="opcaoMisturada"type="submit">Misturado</button>
-            <button id="verPalavras"type="submit" onclick="mostraPalavras()">Ver Palavras</button>
+        <button id="btmais"onclick="popup()" class="bts">mais Palavras</button>
+
+        <div id="inserir_palavra">
+            <div id="fundo_popup">
+                <div id="tes">
+                    Insira Suas Palavras
+                    <div id="inputInserir">
+                        <input id="insere_palavra" type="text">
+                        <button onclick="inserirPalavra()" type="submit" class="bts">INSERIR</button>
+                    </div>
+                    Jogue Com Suas Palavras
+                    <button id="opcaoUsuario"type="submit" class="bts">Minhas palavras</button>
+                    Jogue Com as Palavras do Sistema
+                    <button id="opcaoSistema"type="submit" class="bts">Palavras do Sistema</button>
+                    Jogue Com Todas Palavras Misturadas
+                    <button id="opcaoMisturada"type="submit" class="bts">Misturado</button>
+                    Excluir Suas Palavras
+                    <button id="opcaoExcluir"type="submit" onclick="excluiBanco()" class="bts">Excluir</button>
+                </div>
+            </div>
         </div>
+        <button id="verPalavras"type="submit" onclick="mostraPalavras()">Ver Palavras</button>
+
+
         <script src="js/script.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <table id="tbody"></table>

@@ -1,8 +1,9 @@
 document.getElementById('digita_chute').focus()
-var palavras = ['montanha', 'money','estrelas', 'familia','estudante', 'javascript', 'passaro','paisagem', 'vida', 'frio', 'palmeiras', 'corinthians']
+var palavras = ['palmeiras', 'corinthians']
 var erradas = document.querySelector('.letras_erradas')
 var esconde = document.querySelector('.esconde').style.display = 'block'
 var resultado = document.querySelector('#resultado').style.display = 'none'
+document.getElementById('inserir_palavra').style.display = 'none'
 var informa = document.getElementById('informa')
 var exibe = document.getElementById('exibe_palavra')
 var chute = document.getElementById('digita_chute')
@@ -14,6 +15,12 @@ var letrasInvalidas = []
 var palavrasInseridas = []
 var palavrasUsuario = localStorage.getItem('palavrasInseridas')
 var palavrasParse = JSON.parse(palavrasUsuario)
+
+
+function popup() {
+    document.getElementById('inserir_palavra').style.display = 'flex'
+    document.getElementById('insere_palavra').focus()
+}
 
 function mostraPalavras (){
     
@@ -34,14 +41,15 @@ tr.innerHTML = palavras[pos]
 
 function inserirPalavra() {
 
+    document.getElementById('insere_palavra').focus()
+
     var insere = document.getElementById('insere_palavra').value
     
-    if (palavras.indexOf(insere)  != - 1) {
-        
-        console.log("Já existe essa palavra");  
+    if (palavras.indexOf(insere)  != -1 || palavrasInseridas.indexOf(insere) != -1) {
+        console.log("Já existe essa palavra")
     }
     else if (insere == '') {
-        console.log("Campo Vazio");
+        console.log("Já existe essa palavra")
     }
     else {
 
@@ -58,36 +66,51 @@ function inserirPalavra() {
 document.getElementById('insere_palavra').value = ''
 }
 
-let escolha = 0
-let botaoUsuario = document.getElementById('opcaoUsuario')
-botaoUsuario.addEventListener('click', ()=>{
-    escolha = 1
-    localStorage.setItem('Lista', escolha)
-    reiniciarJogo()
-})
+escolha = 0
+
+//Zero: Opção palavras do Sistema
 let botaoSistema = document.getElementById('opcaoSistema')
 botaoSistema.addEventListener('click', ()=>{
     escolha = 0
     localStorage.setItem('Lista', escolha)
     reiniciarJogo()
 })
+//Um: Opção palavras Inseridas pelo usuário
+let botaoUsuario = document.getElementById('opcaoUsuario')
+botaoUsuario.addEventListener('click', ()=>{
+    if (palavrasInseridas != "" || palavrasParse != null){
+        escolha = 1
+        localStorage.setItem('Lista', escolha)
+    reiniciarJogo()
+    }
+    else {
+        reiniciarJogo()
+    }
+})
+//Dois: Opção Mistura Arrays
 let botaoMistura = document.getElementById('opcaoMisturada')
 botaoMistura.addEventListener('click', ()=>{
+    if (palavrasInseridas != "" || palavrasParse != null) {
     escolha = 2
     localStorage.setItem('Lista', escolha)
     reiniciarJogo()
+    }
+    else {
+        reiniciarJogo()
+    }
 })
 retornoEscolha = localStorage.getItem('Lista')
 
-var misturado = palavrasParse.concat(palavras)
+if(retornoEscolha == 2) {
+misturado = palavrasParse.concat(palavras)
+}
 
 function sorteiaPalavra(){
-    if(palavrasParse != null && retornoEscolha == 1) {
+    if(retornoEscolha == 1) {
     var sorteio = palavrasParse[Math.floor(Math.random() * palavrasParse.length)]
 }
 else if (retornoEscolha == 2) {
     sorteio = misturado[Math.floor(Math.random() * misturado.length)]
-    console.log(misturado)
 }
 else {
     sorteio = palavras[Math.floor(Math.random() * palavras.length)]
@@ -147,9 +170,6 @@ function verifica() {
     mostrarLetrasErradas()
     desenharForca() 
     checarJogo()
-    console.log('CORRETAS: ' + letrasCorretas)
-    console.log('ERRADAS: ' + letrasErradas)
-    console.log('INVALIDAS: '+ letrasInvalidas)
     chute.value =''
     document.getElementById('digita_chute').focus()
 }
@@ -211,10 +231,18 @@ function reiniciarJogo() {
     window.location.reload()
 }
 
-$('#digita_chute').keypress(function(e) {
+function excluiBanco() {
+    localStorage.removeItem('palavrasInseridas');
+    localStorage.setItem('Lista', 0)
+    reiniciarJogo()
+}
+
+$('#digita_chute, #insere_palavra').keypress(function(e) {
     var keyCode = (e.keyCode ? e.keyCode : e.which); 
     if (!(keyCode > 64 && keyCode < 91 || keyCode > 96 && keyCode < 123)) {
       e.preventDefault();
       alert('Letra Não Permitida')
     }
     });
+
+    console.log(palavraSorteada)
