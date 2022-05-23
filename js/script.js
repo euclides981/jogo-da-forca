@@ -1,5 +1,6 @@
 document.getElementById('digita_chute').focus()
-var palavras = ['palmeiras', 'corinthians']
+var botaoMais = document.getElementById('btmais').botaoMais
+var palavras = ['javascript','tecnologia','futebol','ovo','forca','computador','vida']
 var erradas = document.querySelector('.letras_erradas')
 var esconde = document.querySelector('.esconde').style.display = 'block'
 var resultado = document.querySelector('#resultado').style.display = 'none'
@@ -13,60 +14,10 @@ var letrasErradas = []
 var letrasCorretas = []
 var letrasInvalidas = []
 var palavrasInseridas = []
+var palavrasUsuario = []
 var palavrasUsuario = localStorage.getItem('palavrasInseridas')
 var palavrasParse = JSON.parse(palavrasUsuario)
-
-
-function popup() {
-    document.getElementById('inserir_palavra').style.display = 'flex'
-    document.getElementById('insere_palavra').focus()
-}
-
-function mostraPalavras (){
-    
-var corpoTabela = document.querySelector('#tbody')
-    
-tbody.innerText = ''
-
-for (var pos = 0; pos < palavras.length; pos++) {
-    
-var tr = document.createElement('tr');
-
-corpoTabela.appendChild(tr);
-
-tr.innerHTML = palavras[pos]
-    
-}
-}
-
-function inserirPalavra() {
-
-    document.getElementById('insere_palavra').focus()
-
-    var insere = document.getElementById('insere_palavra').value
-    
-    if (palavras.indexOf(insere)  != -1 || palavrasInseridas.indexOf(insere) != -1) {
-        console.log("Já existe essa palavra")
-    }
-    else if (insere == '') {
-        console.log("Já existe essa palavra")
-    }
-    else {
-
-        palavrasInseridas.push(insere)
-
-        if(palavrasParse) {
-
-        localStorage.setItem('palavrasInseridas', JSON.stringify(palavrasInseridas.concat(palavrasParse)))
-    }
-    else {
-        localStorage.setItem('palavrasInseridas', JSON.stringify(palavrasInseridas))
-    }    
-}
-document.getElementById('insere_palavra').value = ''
-}
-
-escolha = 0
+var escolha = 0
 
 //Zero: Opção palavras do Sistema
 let botaoSistema = document.getElementById('opcaoSistema')
