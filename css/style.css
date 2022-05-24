@@ -109,7 +109,7 @@ body {
     align-items: center;
     background-color: #eeede8;
     width: 310px;
-    height: 300px;
+    height: 320px;
     border-radius: 10px;
 }
 #inputInserir {
@@ -121,15 +121,55 @@ body {
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.1em;
-    color: #fff;
-    border-color:transparent;
+    color: #d7e2d5;
+    border-color: transparent;
+    border-radius: 5px;
     text-transform: uppercase;
 }
 .bts:hover {
-    border-color: #fff;
+    background-color: #4777dd;
 }
 #btmais {
     position: absolute;
-    top: 100px;
-    left: 10px;
+    top: 110%;
+    left: 0;
+}
+#bt_fecha {
+    display: flex;
+    justify-content: right;
+}
+#fechar {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    text-align: right;
+    color: red;
+    font-weight: bold;
+}
+#verPalavras {
+    cursor: pointer;
+    position: absolute;
+    top: 110%;
+    right: 0;
+}
+#fundo_tabela {
+    display:grid;
+    padding: 10px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeede8;
+    width: 310px;
+    height: 350px;
+    border-radius: 10px;
+}
+#espiar {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
 }

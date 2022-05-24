@@ -19,6 +19,8 @@
                     <div id="campoVazio" class="alerta">&nbsp;</div>
                     <div class="letras_erradas">&nbsp;</div>
                     <button onclick="reiniciarJogo()" class="bts">NOVO JOGO</button><br>
+                    <button id="btmais" onclick="popup()" class="bts">mais Palavras</button>
+                    <button id="verPalavras" type="submit" class="bts" onclick="mostraPalavras()">Ver Palavras</button>
                 </div>
             </div>
             <div id="resultado">
@@ -26,11 +28,23 @@
                 <button onclick="reiniciarJogo()" class="bts">Jogue Novamente</button>
             </div>
         </div>
-        <button id="btmais" onclick="popup()" class="bts">mais Palavras</button>
+
+        <div id="espiar">
+            <div id="fundo_tabela">
+                Gostaria de ver as Palavras Secretas?
+                <button class="bts" onclick="mostraPalavrasDoSistema()">Sim me Mostre as Palavras</button>
+                <button class="bts" onclick="mostraMinhasPalavras()">Mostre Só as Minhas</button>
+                <button class="bts" onclick="mostraTodasPalavras()">Mostre todas Palavras</button>
+                <select size="10" id="tbody"></select>
+            </div>
+        </div>
 
         <div id="inserir_palavra">
             <div id="fundo_popup">
                 <div id="tes">
+                    <div id="bt_fecha">
+                        <button id="fechar"type="submit" title="FECHAR" onclick="fechaPopup()">X</button>
+                    </div>
                     Insira Suas Palavras
                     <div id="inputInserir">
                         <input id="insere_palavra" type="text">
@@ -47,11 +61,10 @@
                 </div>
             </div>
         </div>
-        <button id="verPalavras" type="submit" onclick="mostraPalavras()">Ver Palavras</button>
         <script src="js/script.js" defer></script>
         <script src="js/insere_palavras.js" defer></script>
         <script src="js/mostra_palavras.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <table id="tbody"></table>
+        
     </body>
 </html>

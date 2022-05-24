@@ -1,6 +1,5 @@
 document.getElementById('digita_chute').focus()
-var botaoMais = document.getElementById('btmais').botaoMais
-var palavras = ['javascript','tecnologia','futebol','ovo','forca','computador','vida']
+var palavras = ['javascript','tecnologia','futebol','ovo','forca','computador','vida','natureza','animais']
 var erradas = document.querySelector('.letras_erradas')
 var esconde = document.querySelector('.esconde').style.display = 'block'
 var resultado = document.querySelector('#resultado').style.display = 'none'

@@ -10,7 +10,7 @@ function inserirPalavra() {
     else {
     if (palavrasParse == null){
         if(palavras.indexOf(insere) != -1 || palavrasInseridas.indexOf(insere) != -1) {
-            alert(`A palavra ${insere} já existe no Jogo\nTente uma palavra diferente\nGostaria de ver as palavras cadastradas? Clique aqui${botaoMais}`)
+            alert(`A palavra ${insere} já existe no Jogo\nTente uma palavra diferente`)
         }
         else {
             palavrasInseridas.push(insere)
@@ -20,7 +20,7 @@ function inserirPalavra() {
     }
     if (palavrasParse != null) {
         if(palavras.indexOf(insere) != -1 || palavrasParse.indexOf(insere) != -1 || palavrasInseridas.indexOf(insere) != -1) {
-            alert(`A palavra ${insere} já existe no Jogo\nTente uma palavra diferente\nGostaria de ver as palavras cadastradas? Clique aqui${botaoMais}`)
+            alert(`A palavra ${insere} já existe no Jogo\nTente uma palavra diferente`)
         }
         else {
             palavrasInseridas.push(insere)
