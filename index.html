@@ -31,14 +31,16 @@
 
         <div id="espiar">
             <div id="fundo_tabela">
+                <div id="bt_fecha">
+                    <button id="fechar"type="submit" title="FECHAR" onclick="fechaPopup()">X</button>
+                </div>
                 Gostaria de ver as Palavras Secretas?
-                <button class="bts" onclick="mostraPalavrasDoSistema()">Sim me Mostre as Palavras</button>
+                <button class="bts" onclick="mostraPalavrasDoSistema()">Sim, me Mostre as Palavras</button>
                 <button class="bts" onclick="mostraMinhasPalavras()">Mostre Só as Minhas</button>
                 <button class="bts" onclick="mostraTodasPalavras()">Mostre todas Palavras</button>
                 <select size="10" id="tbody"></select>
             </div>
         </div>
-
         <div id="inserir_palavra">
             <div id="fundo_popup">
                 <div id="tes">
@@ -64,7 +66,8 @@
         <script src="js/script.js" defer></script>
         <script src="js/insere_palavras.js" defer></script>
         <script src="js/mostra_palavras.js" defer></script>
+        <script src="js/escolhe_array.js" defer></script>
+        <script src="js/verifica_letras.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        
     </body>
 </html>
