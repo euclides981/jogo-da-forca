@@ -13,32 +13,21 @@
                 <div id="exibe_palavra"></div>
                 <div id="chute">
                     <input type="text" name="" id="digita_chute" maxlength="1">
-                    <button onclick="verifica()" type="submit" class="bts" id="bt_chute">CHUTAR</button>
+                    <button onclick="verifica()" type="submit" class="bts" id="bt_chute">Chutar</button>
                 </div>
                 <div id="avisos">
                     <div id="campoVazio" class="alerta">&nbsp;</div>
                     <div class="letras_erradas">&nbsp;</div>
-                    <button onclick="reiniciarJogo()" class="bts">NOVO JOGO</button><br>
-                    <button id="btmais" onclick="popup()" class="bts">mais Palavras</button>
-                    <button id="verPalavras" type="submit" class="bts" onclick="mostraPalavras()">Ver Palavras</button>
+                    <button onclick="reiniciarJogo()" class="bts">Novo Jogo</button>
+                    <div id="doisBotoes">
+                        <button id="btmais" onclick="popup()" class="bts">mais Palavras</button>
+                        <button id="verPalavras" type="submit" class="bts" onclick="mostraPalavras()">Ver Palavras</button>
+                    </div>
                 </div>
             </div>
             <div id="resultado">
                 <div id="informa"></div>
                 <button onclick="reiniciarJogo()" class="bts">Jogue Novamente</button>
-            </div>
-        </div>
-
-        <div id="espiar">
-            <div id="fundo_tabela">
-                <div id="bt_fecha">
-                    <button id="fechar"type="submit" title="FECHAR" onclick="fechaPopup()">X</button>
-                </div>
-                Gostaria de ver as Palavras Secretas?
-                <button class="bts" onclick="mostraPalavrasDoSistema()">Sim, me Mostre as Palavras</button>
-                <button class="bts" onclick="mostraMinhasPalavras()">Mostre Só as Minhas</button>
-                <button class="bts" onclick="mostraTodasPalavras()">Mostre todas Palavras</button>
-                <select size="10" id="tbody"></select>
             </div>
         </div>
         <div id="inserir_palavra">
@@ -63,11 +52,31 @@
                 </div>
             </div>
         </div>
+        <div id="espiar">
+            <div id="fundo_tabela">
+                <div id="bt_fecha">
+                    <button id="fechar"type="submit" title="FECHAR" onclick="fechaPopup()">X</button>
+                </div>
+                Gostaria de ver as Palavras Secretas?
+                <button class="bts" onclick="mostraPalavrasDoSistema()">Sim, me Mostre as Palavras</button>
+                <button class="bts" onclick="mostraMinhasPalavras()">Mostre Só as Minhas</button>
+                <button class="bts" onclick="mostraTodasPalavras()">Mostre todas Palavras</button>
+                <textarea rows="12" id="mostra_secretas" disabled></textarea>
+            </div>
+        </div>
+        <div id="meusLinks"> 
+            <a href="https://github.com/euclides981" target="_blank"><img src="https://euclides981.github.io/img/github.svg" title="Perfil GitHub" alt="Perfil GitHub"></a>
+            <a href="https://www.linkedin.com/in/euclides981/" target="_blank"><img src="https://euclides981.github.io/img/linkedin.svg" title="Perfil Linkedin" alt="Perfil Linkedin"></a>
+            <a href="https://euclides981.github.io/criptografia/" target="_blank"><img src="https://euclides981.github.io/img/logoCripto.svg" title="Criptografia" alt="Criptografia"></a>
+        </div>
+        <div id="topo"></div>
         <script src="js/script.js" defer></script>
-        <script src="js/insere_palavras.js" defer></script>
+        <script src="js/local_storage.js" defer></script>
         <script src="js/mostra_palavras.js" defer></script>
         <script src="js/escolhe_array.js" defer></script>
         <script src="js/verifica_letras.js" defer></script>
+        <script src="js/reinicia.js" defer></script>
+        <script src="js/checar.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </body>
 </html>

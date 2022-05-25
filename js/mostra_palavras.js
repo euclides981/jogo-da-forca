@@ -1,4 +1,4 @@
-var corpoTabela = document.querySelector('#tbody')
+var corpoTabela = document.querySelector('#mostra_secretas')
 
 document.getElementById('espiar').style.display = 'none'
 
@@ -33,11 +33,7 @@ function mostraPalavrasDoSistema() {
 
     for (var pos = 0; pos < palavras.length; pos++) {
 
-        var word = document.createElement('option')
-
-        corpoTabela.appendChild(word)
-
-        word.innerHTML = palavras[pos]
+        corpoTabela.innerHTML += `${palavras[pos]}\n`
     }
 }
 
@@ -51,32 +47,20 @@ function mostraMinhasPalavras() {
 
         for (var pos = 0; pos < palavrasInseridas.length; pos++) {
 
-            var word = document.createElement('option')
-        
-            corpoTabela.appendChild(word)
-            
-            word.innerHTML = palavrasInseridas[pos]
+            corpoTabela.innerHTML += `${palavrasInseridas[pos]}\n`
         }
     }
 
     else {
         for (var pos = 0; pos < palavrasParse.concat(palavrasInseridas).length; pos++) {
 
-            var word = document.createElement('option')
-
-            corpoTabela.appendChild(word);
-            
-            word.innerHTML = palavrasParse.concat(palavrasInseridas)[pos]
+            corpoTabela.innerHTML += `${palavrasParse.concat(palavrasInseridas)[pos]}\n`
         }
     }
 
-    if (word == undefined) {
+    if (corpoTabela.value == '') {
 
-        var word = document.createElement('option')
-
-        corpoTabela.appendChild(word);
-
-        word.innerHTML = `Você ainda não cadastrou palavras`
+        corpoTabela.innerHTML = `Você ainda não cadastrou palavras`
     }
 }
 
@@ -89,12 +73,8 @@ function mostraTodasPalavras() {
     if (palavrasParse == null && palavrasInseridas == '') {
 
         for (var pos = 0; pos < palavras.length; pos++) {
-
-            var word = document.createElement('option')
-
-            corpoTabela.appendChild(word)
-
-            word.innerHTML = palavras[pos]
+ 
+            corpoTabela.innerHTML += `${palavras[pos]}\n`
             
         }
     }
@@ -103,34 +83,23 @@ function mostraTodasPalavras() {
 
         for (var pos = 0; pos < palavras.concat(palavrasParse, palavrasInseridas).length; pos++) {
     
-            var word = document.createElement('option')
-    
-            corpoTabela.appendChild(word)
-    
-            word.innerHTML = palavras.concat(palavrasParse, palavrasInseridas)[pos]
+            corpoTabela.innerHTML += `${palavras.concat(palavrasParse, palavrasInseridas)[pos]}\n`
 
         }
     }
 
     else if (palavrasParse == null && palavrasInseridas != '') {
+
         for (var pos = 0; pos < palavras.concat(palavrasInseridas).length; pos++) {
     
-            var word = document.createElement('option')
-    
-            corpoTabela.appendChild(word)
-    
-            word.innerHTML = palavras.concat(palavrasInseridas)[pos]
+            corpoTabela.innerHTML += `${palavras.concat(palavrasInseridas)[pos]}\n`
         }
     }
     
     else {
         for (var pos = 0; pos < palavras.concat(palavrasParse).length; pos++) {
-        
-            var word = document.createElement('option')
 
-            corpoTabela.appendChild(word)
-
-            word.innerHTML = palavras.concat(palavrasParse)[pos]
+            corpoTabela.innerHTML += `${palavras.concat(palavrasParse)[pos]}\n`
         }
     }
 }

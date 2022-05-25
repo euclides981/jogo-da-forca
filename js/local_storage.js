@@ -1,3 +1,6 @@
+
+var banco = localStorage.getItem('Banco')
+
 function inserirPalavra() {
 
     document.getElementById('insere_palavra').focus()
@@ -24,6 +27,10 @@ function inserirPalavra() {
 
                 localStorage.setItem('palavrasInseridas', JSON.stringify(palavrasInseridas))
 
+                banco = 1
+
+                localStorage.setItem('Banco', (banco))
+
                 alert(`A palavra ${insere} foi inserida com sucesso`)
             }
         }
@@ -40,6 +47,10 @@ function inserirPalavra() {
                 palavrasInseridas.push(insere)
 
                 localStorage.setItem('palavrasInseridas', JSON.stringify(palavrasInseridas.concat(palavrasParse)))
+                
+                banco = 1
+
+                localStorage.setItem('Banco', (banco))
 
                 alert(`A palavra ${insere} foi inserida com sucesso`)
             }
@@ -47,4 +58,26 @@ function inserirPalavra() {
     }
 
     document.getElementById('insere_palavra').value = ''
+}
+
+function excluiBanco() {
+
+    if (banco == 1) {
+
+    localStorage.removeItem('palavrasInseridas')
+    
+    localStorage.setItem('Lista', 0)
+
+    alert('Suas Palavras Foram Excluídas')
+
+    banco = 0
+
+    localStorage.setItem('Banco', JSON.stringify(banco))
+        
+    }
+
+    else {
+        
+        alert('Não Existem Palavras Para Excluir')
+    }
 }

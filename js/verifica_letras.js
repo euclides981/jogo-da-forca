@@ -2,7 +2,7 @@ function verifica() {
 
     campoVazio.innerHTML = `&nbsp;`
 
-    var chuteUp = chute.value.toUpperCase()
+    let chuteUp = chute.value.toUpperCase()
 
     if (chuteUp == '') {
 
