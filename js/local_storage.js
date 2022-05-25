@@ -72,6 +72,10 @@ function excluiBanco() {
 
     banco = 0
 
+    palavrasParse = ''
+
+    palavrasInseridas = []
+
     localStorage.setItem('Banco', JSON.stringify(banco))
         
     }

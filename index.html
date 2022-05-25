@@ -20,8 +20,8 @@
                     <div class="letras_erradas">&nbsp;</div>
                     <button onclick="reiniciarJogo()" class="bts">Novo Jogo</button>
                     <div id="doisBotoes">
-                        <button id="btmais" onclick="popup()" class="bts">mais Palavras</button>
-                        <button id="verPalavras" type="submit" class="bts" onclick="mostraPalavras()">Ver Palavras</button>
+                        <button id="btmais" onclick="popup()" class="btsVerde">Adicionar Palavras</button>
+                        <button id="verPalavras" type="submit" class="btsVermelho" onclick="mostraPalavras()">Espiar Palavras</button>
                     </div>
                 </div>
             </div>
@@ -42,13 +42,13 @@
                         <button onclick="inserirPalavra()" type="submit" class="bts">INSERIR</button>
                     </div>
                     Jogue Com Suas Palavras
-                    <button id="opcaoUsuario"type="submit" class="bts">Minhas palavras</button>
+                    <button id="opcaoUsuario"type="submit" class="btsVerde">Minhas palavras</button>
                     Jogue Com as Palavras do Sistema
-                    <button id="opcaoSistema"type="submit" class="bts">Palavras do Sistema</button>
+                    <button id="opcaoSistema"type="submit" class="btsVerde">Palavras do Sistema</button>
                     Jogue Com Todas Palavras Misturadas
-                    <button id="opcaoMisturada"type="submit" class="bts">Misturado</button>
+                    <button id="opcaoMisturada"type="submit" class="btsVerde">Misturado</button>
                     Excluir Suas Palavras
-                    <button id="opcaoExcluir"type="submit" onclick="excluiBanco()" class="bts">Excluir</button>
+                    <button id="opcaoExcluir"type="submit" onclick="excluiBanco()" class="btsVermelho">Excluir</button>
                 </div>
             </div>
         </div>
@@ -58,16 +58,16 @@
                     <button id="fechar"type="submit" title="FECHAR" onclick="fechaPopup()">X</button>
                 </div>
                 Gostaria de ver as Palavras Secretas?
-                <button class="bts" onclick="mostraPalavrasDoSistema()">Sim, me Mostre as Palavras</button>
-                <button class="bts" onclick="mostraMinhasPalavras()">Mostre Só as Minhas</button>
-                <button class="bts" onclick="mostraTodasPalavras()">Mostre todas Palavras</button>
+                <button class="btsVermelho" onclick="mostraPalavrasDoSistema()">Sim, me Mostre as Palavras</button>
+                <button class="btsVermelho" onclick="mostraMinhasPalavras()">Mostre Só as Minhas</button>
+                <button class="btsVermelho" onclick="mostraTodasPalavras()">Mostre todas Palavras</button>
                 <textarea rows="12" id="mostra_secretas" disabled></textarea>
             </div>
         </div>
         <div id="meusLinks"> 
             <a href="https://github.com/euclides981" target="_blank"><img src="https://euclides981.github.io/img/github.svg" title="Perfil GitHub" alt="Perfil GitHub"></a>
             <a href="https://www.linkedin.com/in/euclides981/" target="_blank"><img src="https://euclides981.github.io/img/linkedin.svg" title="Perfil Linkedin" alt="Perfil Linkedin"></a>
-            <a href="https://euclides981.github.io/criptografia/" target="_blank"><img src="https://euclides981.github.io/img/logoCripto.svg" title="Criptografia" alt="Criptografia"></a>
+            <a href="https://euclides981.github.io/criptografia/" target="_blank"><img src="https://euclides981.github.io/img/logoCripto.svg" title="Criptografia - Primeiro Desafio Alura" alt="Criptografia"></a>
         </div>
         <div id="topo"></div>
         <script src="js/script.js" defer></script>

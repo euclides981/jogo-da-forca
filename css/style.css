@@ -120,13 +120,40 @@ body {
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.1em;
-    color: #d7e2d5;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.bts:hover {
+    background-color: #4777dd;
+}
+.btsVerde {
+    background-color: #37a02d;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
     border-color: transparent;
     border-radius: 5px;
     text-transform: uppercase;
 }
-.bts:hover {
-    background-color: #4777dd;
+.btsVerde:hover {
+    background-color: #4a8f22;
+}
+.btsVermelho {
+    background-color: #c24747;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.btsVermelho:hover {
+    background-color: #a53342;
 }
 #doisBotoes {
     position: absolute;
@@ -141,13 +168,13 @@ body {
     justify-content: right;
 }
 #fechar {
+    background-color: #a53342;
     cursor: pointer;
     display: flex;
     justify-content: center;
-    width: 10px;
+    align-items: center;
     text-align: right;
-    color: red;
-    font-weight: bold;
+    color: #fff;
 }
 #fundo_tabela {
     display:grid;
@@ -155,8 +182,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #eeede8;
-    width: 310px;
-    height: 350px;
+    width: 300px;
+    height: 360px;
     border-radius: 10px;
     gap: 5px;
 }
@@ -173,9 +200,9 @@ body {
 #mostra_secretas {
     background-color: transparent;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
     resize: none;
-    color: #416ac2;
+    color: #a53342;
     font-size: 11pt;
     font-weight: bold;
 }
@@ -189,6 +216,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+#meusLinks a{
+    margin-top: 5px;   
 }
 #topo {
     background-color: #567cce;
