@@ -42,11 +42,11 @@ function verifica() {
 
     }
     
+    desenharForca()
+    
     mostrarLetrasCertas()
 
     mostrarLetrasErradas()
-
-    desenharForca() 
 
     checarJogo()
 

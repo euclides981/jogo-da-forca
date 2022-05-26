@@ -3,8 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="euclides981">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <!-- tag property -->
+        <meta property="og:image" content="https://euclides981.github.io/jogo-da-forca/img/card.png">
+        <meta property="og:type" content="image/png">
+        <meta property="og:image:width" content="600">
+        <meta property="og:image:height" content="350">
+        <meta property="og:image:alt" content="Jogo da Forca">
+        <meta property="og:title" content="Jogo da Forca - JavaScript">
+        <meta property="og:description" content="Jogo da Forca Feito em JavaScript - Esse Projeto faz Parte do Curso de Programação da Alura / Oracle">
+        <meta property="og:url" content="https://euclides981.github.io/jogo-da-forca/">
+        <meta name="twitter:card" content="summary_large_image">
         <title>Jogo Da Forca em JavaScriipt</title>
     </head>
     <body>
@@ -24,6 +36,11 @@
                         <button id="verPalavras" type="submit" class="btsVermelho" onclick="mostraPalavras()">Espiar Palavras</button>
                     </div>
                 </div>
+            </div>
+            <div id="meusLinks"> 
+                <a href="https://github.com/euclides981" target="_blank"><img src="https://euclides981.github.io/img/github.svg" class="bt_links" title="Perfil GitHub" alt="Perfil GitHub"></a>
+                <a href="https://www.linkedin.com/in/euclides981/" target="_blank"><img src="https://euclides981.github.io/img/linkedin.svg" class="bt_links" title="Perfil Linkedin" alt="Perfil Linkedin"></a>
+                <a href="https://euclides981.github.io/criptografia/" target="_blank"><img src="https://euclides981.github.io/img/logoCripto.svg" class="bt_links" title="Criptografia - Primeiro Desafio Alura" alt="Criptografia"></a>
             </div>
             <div id="resultado">
                 <div id="informa"></div>
@@ -64,12 +81,7 @@
                 <textarea rows="12" id="mostra_secretas" disabled></textarea>
             </div>
         </div>
-        <div id="meusLinks"> 
-            <a href="https://github.com/euclides981" target="_blank"><img src="https://euclides981.github.io/img/github.svg" title="Perfil GitHub" alt="Perfil GitHub"></a>
-            <a href="https://www.linkedin.com/in/euclides981/" target="_blank"><img src="https://euclides981.github.io/img/linkedin.svg" title="Perfil Linkedin" alt="Perfil Linkedin"></a>
-            <a href="https://euclides981.github.io/criptografia/" target="_blank"><img src="https://euclides981.github.io/img/logoCripto.svg" title="Criptografia - Primeiro Desafio Alura" alt="Criptografia"></a>
-        </div>
-        <div id="topo"></div>
+        <div id="topo"><h3>JOGO DA FORCA</h3></div>
         <script src="js/script.js" defer></script>
         <script src="js/local_storage.js" defer></script>
         <script src="js/mostra_palavras.js" defer></script>
