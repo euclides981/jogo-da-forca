@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+.container {
+    background-image: url("/img/back.svg");    
+    height: 100vh;   
+}
 body {
-    margin: 0;
     background-color: #dfd6d3;
     font-family: 'Oswald', sans-serif;
     font-size: 14pt;
@@ -11,6 +14,7 @@ body {
     text-align: center;
     color: #416ac2;
     font-weight: 700;
+    height: 20px;
 }
 #exibe_palavra {
     display: flex;
@@ -74,7 +78,7 @@ body {
     box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     width: 250px;
-    height: 310px;
+    height: 300px;
 }
 #resultado {
     position: absolute;
@@ -113,6 +117,7 @@ body {
 #inputInserir {
     display: flex;
     gap: 5px;
+    align-items: center;
 }
 .bts {
     background-color: #416ac2;
@@ -154,6 +159,17 @@ body {
 .btsVermelho:hover {
     background-color: #a53342;
 }
+.bts_novo_jogo {
+    background-color: #416ac2;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
 #doisBotoes {
     position: absolute;
     display: grid;
@@ -161,7 +177,6 @@ body {
     width: 100%;
     gap: 20px;
 }
-
 #bt_fecha {
     display: flex;
     justify-content: right;
@@ -207,15 +222,18 @@ body {
 }
 #meusLinks {
     position:absolute;
-    background-color: transparent;
+    justify-content:center;
+    background-color: #567cce;
+    height: 60px;
     display: flex;
-    top: 0.6%;
-    right: 5%;
+    width: 250px;
+    right: 2%;
     align-items: center;
     gap: 50px;
+    border-radius: 20px;
 }
 .bt_links {
-    background-color: rgba(228, 222, 222, 0.2);
+    background-color: rgba(255, 255, 255, 0.089);
     border-radius: 5px;
     padding: 5px;
     height: 30px;
@@ -233,4 +251,18 @@ body {
     justify-content: left;
     align-items: center;
     gap: 50px;
+}
+.frases {
+    font-size: 12pt;
+    color: #416ac2;
+    padding: 5px;
+}
+.bts_inserir {
+    background-color: #567cce;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border-color: transparent;
+    text-transform: uppercase;
 }
