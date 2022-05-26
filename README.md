@@ -1,3 +1,3 @@
-# Jogo da Forca
+# ❗ Jogo da Forca
 
-## Desafio Proposto pela Alura
+## 👊🏻 Segundo Desafio Proposto pela Alura - ONE :punch:
