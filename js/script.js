@@ -1,6 +1,8 @@
 document.getElementById('digita_chute').focus()
 document.getElementById('inserir_palavra').style.display = 'none'
-var palavras = ['javascript','tecnologia','futebol','ovo','forca','computador','vida','natureza','animais']
+var palavras = ['javascript','tecnologia','futebol','ovo','forca','computador',
+'eua','dinheiro','vida','natureza','jesus','animais','professor','escola',
+'camelo','brasil','inverno','mitologia']
 var erradas = document.querySelector('.letras_erradas')
 var esconde = document.querySelector('.esconde').style.display = 'block'
 var resultado = document.querySelector('#resultado').style.display = 'none'
@@ -87,10 +89,3 @@ function mostrarLetrasErradas() {
         })
     }
 }
-
-
-
-
-
-
-console.log(palavraSorteada)
