@@ -34,6 +34,6 @@ No CSS dei meus primeiros passos com ***position***, bastante útil para fixar e
 
 [![Prévia do Projeto](img/previa_desk.png)](https://github.com/euclides981/criptografia#readme)
 
-[![Watch the video](https://raw.githubusercontent.com/euclides981/jogo-da-forca/main/img/card.png?token=GHSAT0AAAAAABSVTHQOY7TXZBYQZFMOMZIKYURBPAA)](https://www.youtube.com/watch?v=KOv3wQtPkAA)
+### Executado em Desktop
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KOv3wQtPkAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Prévia do Projeto](img/forca.gif)](https://github.com/euclides981/criptografia#readme)
