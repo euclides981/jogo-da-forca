@@ -36,4 +36,4 @@ No CSS dei meus primeiros passos com ***position***, bastante útil para fixar e
 
 ### Veja no Youtube o Projeto em Execução
 
-[![Watch the video](img/card.png)](https://www.youtube.com/watch?v=KOv3wQtPkAA)
+[![Watch the video](img/card.svg)](https://www.youtube.com/watch?v=KOv3wQtPkAA)
