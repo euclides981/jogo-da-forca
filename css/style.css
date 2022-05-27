@@ -2,7 +2,7 @@
 
 .container {
     background-image: url("/img/back.svg");    
-    height: 100vh;   
+    height: 110vh;   
 }
 body {
     background-color: #dfd6d3;
@@ -228,7 +228,7 @@ body {
     background-color: #567cce;
     height: 60px;
     display: flex;
-    width: 250px;
+    width: 200px;
     right: 1%;
     align-items: center;
     gap: 40px;
@@ -238,10 +238,11 @@ body {
     background-color: rgba(255, 255, 255, 0.089);
     border-radius: 5px;
     padding: 5px;
-    height: 30px;
+    
 }
 #meusLinks a{
-    margin-top: 5px;   
+    margin-top: 5px;
+    width: 25px;
 }
 #topo {
     background-color: #567cce;
@@ -250,6 +251,7 @@ body {
     height: 60px;
 }
 #topo2 {
+    font-size: 12pt;
     position:absolute;
     background-color: transparent;
     display: flex;

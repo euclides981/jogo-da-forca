@@ -21,10 +21,18 @@ ___
 
 ___
 
-## Prévia do Projeto Executado em Desktop
+## Prévia do Projeto em Execução
 
 [![Prévia do Projeto](img/previa.png)](https://github.com/euclides981/criptografia#readme)
 
+___
+
 ## Prévia do Projeto Executado em Smartphone
 
-[![Prévia do Projeto](img/phone.png)](https://github.com/euclides981/criptografia#readme)
+[![Prévia do Projeto](img/cel.png)](https://github.com/euclides981/criptografia#readme)
+
+___
+
+## Prévia do Projeto Executado em Desktop
+
+[![Prévia do Projeto](img/previa_desk.png)](https://github.com/euclides981/criptografia#readme)

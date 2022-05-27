@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="40"
+   height="40"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="logoCripto.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.656854"
+     inkscape:cx="0.35355341"
+     inkscape:cy="11.578874"
+     inkscape:document-units="cm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
+     inkscape:showpageshadow="false"
+     width="1000px"
+     showborder="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g36777"
+       transform="matrix(1.2028409,0,0,0.62647961,-1.5970225,0.54338609)"
+       style="stroke-width:1.15197">
+      <g
+         id="g42625"
+         transform="matrix(4.2395876,0,0,4.1646052,-7.5570444,-1.0555375)"
+         style="fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none">
+        <g
+           id="g36611"
+           transform="translate(-13.394817,0.20306196)"
+           style="fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none">
+          <g
+             aria-label="i"
+             transform="rotate(-143.33237)"
+             id="text35803"
+             style="font-size:10.1476px;line-height:1.25;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:1.18917px;word-spacing:0px;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none">
+            <path
+               d="m -16.629521,4.9695317 c -0.101476,0.020295 -0.152214,0.1116236 -0.142066,0.152214 0.233395,1.2075645 0.202952,6.9206633 0.273985,7.3468623 0.04059,0 0.131919,-0.111623 0.131919,-0.111623 l 0.08118,-0.273986 0.08118,0.07103 0.172509,-0.233395 0.29428,-0.172509 0.131919,-0.375462 0.121771,-0.03044 0.05074,-0.25369 0.07103,0.09133 c 0,0 0.2131,-2.4658668 0.294281,-4.56642 0.06088,-1.8773061 -1.116236,-1.7555349 -1.562731,-1.6439113 z"
+               style="font-family:BlowBrush;-inkscape-font-specification:BlowBrush;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2724" />
+          </g>
+          <g
+             aria-label="i"
+             transform="matrix(-0.80211315,0.59717208,0.59717208,0.80211315,0,0)"
+             id="text36359"
+             style="font-size:10.1476px;line-height:1.25;-inkscape-font-specification:'sans-serif, Normal';text-align:center;letter-spacing:1.18917px;word-spacing:0px;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none">
+            <path
+               d="m -10.762147,12.850507 c -0.101476,0.02029 -0.152214,0.111623 -0.142067,0.152214 0.233395,1.207564 0.202952,6.920663 0.273986,7.346862 0.04059,0 0.131918,-0.111624 0.131918,-0.111624 l 0.08118,-0.273985 0.08118,0.07103 0.172509,-0.233394 0.2942806,-0.17251 0.1319188,-0.375461 0.1217713,-0.03044 0.050738,-0.25369 0.071033,0.09133 c 0,0 0.2130996,-2.465867 0.2942804,-4.56642 0.060886,-1.877306 -1.1162361,-1.755535 -1.5627301,-1.643911 z"
+               style="font-family:BlowBrush;-inkscape-font-specification:BlowBrush;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2727" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
