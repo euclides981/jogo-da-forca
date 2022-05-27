@@ -2,7 +2,7 @@
 
 ## | 👊🏻 Segundo Desafio Proposto | Alura - ONE |
 
-## 💾 Tecs Utilizadas
+### 💾 Tecs Utilizadas
 
 ![HTML](https://img.shields.io/badge/-HTML-ccc?style=flat&logo=HTML5)&nbsp;
 ![CSS](https://img.shields.io/badge/-CSS-ccc?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
@@ -11,11 +11,13 @@
 
 ## ✍🏻 Descrição
 
-### Clássico Jogo da Forca Que Marcou Nossas Infâncias, Agora Transformado em Programa de Computador
+### Clássico jogo da forca que marcou nossas infâncias, agora transformado em programa de computador
 
 *Quem nunca brincou de forca que lance a primeira corda* 😃
 
-### Neste Projeto Tive Contato e Utilizei pela Primeira Vez o Local Storage. Não Era Obrigatório Usar, mas Aproveitei Para Aprender um Pouco Mais
+### Neste projeto tive contato e utilizei pela primeira vez o local storage
+
+### No começo apanhei um pouco, mas com o tempo acabei descobrindo uma ferramenta muito poderosa
 
 ## Prévia do Projeto em Execução
 
