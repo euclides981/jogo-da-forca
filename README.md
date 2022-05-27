@@ -17,10 +17,8 @@
 
 *Quem nunca brincou de forca que lance a primeira corda* 😃
 
-Neste projeto tive contato e utilizei pela primeira vez o local storage
-
-No começo apanhei um pouco, mas com o tempo acabei descobrindo uma ferramenta muito poderosa
-
+Neste projeto tive contato e utilizei pela primeira vez o local storage  
+No começo apanhei um pouco, mas com o tempo acabei descobrindo uma ferramenta muito poderosa  
 No CSS dei meus primeiros passos com o position, bastante util para posicionar elementos em locais de difícil acesso 😊
 
 ---
