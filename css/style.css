@@ -102,8 +102,8 @@ body {
     align-items: center;
     justify-content: center;
 }
-#tes {
-    display: grid;    
+#botoes_storage {
+    display: grid;
 }
 #fundo_popup {
     display:flex;
@@ -111,8 +111,9 @@ body {
     align-items: center;
     background-color: #eeede8;
     width: 310px;
-    height: 320px;
+    height: 350px;
     border-radius: 10px;
+    padding: 5px;
 }
 #inputInserir {
     display: flex;
@@ -180,6 +181,7 @@ body {
 #bt_fecha {
     display: flex;
     justify-content: right;
+    margin-bottom: 15px;
 }
 #fechar {
     background-color: #a53342;
@@ -197,7 +199,7 @@ body {
     align-items: center;
     background-color: #eeede8;
     width: 300px;
-    height: 360px;
+    height: 370px;
     border-radius: 10px;
     gap: 5px;
 }
@@ -227,9 +229,9 @@ body {
     height: 60px;
     display: flex;
     width: 250px;
-    right: 2%;
+    right: 1%;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     border-radius: 20px;
 }
 .bt_links {
@@ -244,11 +246,17 @@ body {
 #topo {
     background-color: #567cce;
     display: flex;
-    width: 97%;
+    width: 100%;
     height: 60px;
-    top: 110%;
-    padding-left: 3%;
-    justify-content: left;
+}
+#topo2 {
+    position:absolute;
+    background-color: transparent;
+    display: flex;
+    width: 99%;
+    padding-left: 1%;
+    height: 60px;
+    color: #fff;
     align-items: center;
     gap: 50px;
 }
@@ -265,4 +273,10 @@ body {
     color: #fff;
     border-color: transparent;
     text-transform: uppercase;
+}
+#alert {
+    color: red;
+    text-transform: uppercase;
+    font-size:11pt;
+    margin-bottom: 10px;
 }

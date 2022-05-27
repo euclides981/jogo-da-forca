@@ -34,11 +34,8 @@ let escolha = 0
 let botaoSistema = document.getElementById('opcaoSistema')
 
 botaoSistema.addEventListener('click', ()=>{
-
     escolha = 0
-
     localStorage.setItem('Lista', escolha)
-
     reiniciarJogo()
 })
 
@@ -47,18 +44,16 @@ let botaoUsuario = document.getElementById('opcaoUsuario')
 botaoUsuario.addEventListener('click', ()=>{
 
     if (banco == 1) {
-
         escolha = 1
-
         localStorage.setItem('Lista', escolha)
-
         reiniciarJogo()
     }
 
     else {
-
-       alert('você não possui palavras cadastradas')
+        alerta.innerHTML = ''
+        alerta.innerHTML = `Você não tem palavras cadastradas`
     }
+    document.getElementById('insere_palavra').focus()
 })
 
 let botaoMistura = document.getElementById('opcaoMisturada')
@@ -66,17 +61,14 @@ let botaoMistura = document.getElementById('opcaoMisturada')
 botaoMistura.addEventListener('click', ()=>{
 
     if (banco == 1) {
-
     escolha = 2
-
     localStorage.setItem('Lista', escolha)
-
     reiniciarJogo()
-
     }
 
     else {
-
-        alert('você não possui palavras cadastradas')
+        alerta.innerHTML = ''
+        alerta.innerHTML = `não existem palavras cadastradas`
     }
+    document.getElementById('insere_palavra').focus()
 })

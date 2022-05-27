@@ -21,33 +21,23 @@ var palavrasParse = JSON.parse(palavrasUsuario)
 var retornoEscolha = localStorage.getItem('Lista')
 
 if (retornoEscolha == 2) {
-
     misturado = palavrasParse.concat(palavras)
-
 }
 
 function sorteiaPalavra() {
-
     if (retornoEscolha == 1) {
-
         var sorteio = palavrasParse[Math.floor(Math.random() * palavrasParse.length)]
-
     }
 
     else if (retornoEscolha == 2) {
-
         sorteio = misturado[Math.floor(Math.random() * misturado.length)]
-
     }
 
     else {
-
         sorteio = palavras[Math.floor(Math.random() * palavras.length)]
-
     }
 
     return sorteio
-
 }
 
 var palavraSorteada = sorteiaPalavra().toUpperCase()
@@ -55,23 +45,16 @@ var palavraSorteada = sorteiaPalavra().toUpperCase()
 mostrarLetrasCertas()
 
 function mostrarLetrasCertas() {
-
     var secreta = document.querySelector('#exibe_palavra')
-
     secreta.innerHTML = ''
-
     palavraSorteada.split('').forEach(letra => {
 
         if(letrasCorretas.includes(letra)) {
-
             secreta.innerHTML += `${letra}`
-
         }
 
         else {
-
             secreta.innerHTML += ` _ `
-
         }
     })
 }
@@ -79,13 +62,9 @@ function mostrarLetrasCertas() {
 function mostrarLetrasErradas() {
 
     if (letrasErradas.length) {
-    
         erradas.innerHTML = `Letras Erradas:<br>`
-
         letrasErradas.forEach(letra => {
-
             erradas.innerHTML += `${letra}`
-
         })
     }
 }
