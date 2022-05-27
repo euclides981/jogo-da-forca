@@ -34,6 +34,4 @@ No CSS dei meus primeiros passos com ***position***, bastante útil para fixar e
 
 [![Prévia do Projeto](img/previa_desk.png)](https://github.com/euclides981/criptografia#readme)
 
-### Executado em Desktop
-
-[![Prévia do Projeto](img/forca.gif)](https://github.com/euclides981/criptografia#readme)
+[![Watch the video](https://raw.githubusercontent.com/euclides981/jogo-da-forca/main/img/card.png?token=GHSAT0AAAAAABSVTHQOY7TXZBYQZFMOMZIKYURBPAA)](https://www.youtube.com/watch?v=KOv3wQtPkAA)
