@@ -2,8 +2,6 @@
 
 ## | 👊🏻 Segundo Desafio Proposto | Alura - ONE |
 
-___
-
 ## 💾 Tecs Utilizadas
 
 ![HTML](https://img.shields.io/badge/-HTML-ccc?style=flat&logo=HTML5)&nbsp;
@@ -19,19 +17,13 @@ ___
 
 ### Neste Projeto Tive Contato e Utilizei pela Primeira Vez o Local Storage. Não Era Obrigatório Usar, mas Aproveitei Para Aprender um Pouco Mais
 
-___
-
 ## Prévia do Projeto em Execução
 
 [![Prévia do Projeto](img/previa.png)](https://github.com/euclides981/criptografia#readme)
 
-___
-
 ## Prévia do Projeto Executado em Smartphone
 
 [![Prévia do Projeto](img/cel.png)](https://github.com/euclides981/criptografia#readme)
-
-___
 
 ## Prévia do Projeto Executado em Desktop
 
