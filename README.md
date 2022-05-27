@@ -34,6 +34,10 @@ No CSS dei meus primeiros passos com ***position***, bastante útil para fixar e
 
 [![Prévia do Projeto](img/previa_desk.png)](https://github.com/euclides981/criptografia#readme)
 
+---
+
 ### Veja no Youtube o Projeto em Execução
 
-[![Watch the video](img/card.svg)](https://www.youtube.com/watch?v=KOv3wQtPkAA)
+[![Watch the video](img/card_readme.svg)](https://www.youtube.com/watch?v=KOv3wQtPkAA)
+
+---
