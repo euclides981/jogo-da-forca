@@ -12,7 +12,7 @@
 
 ### ✍🏻 Descrição
 
-### Clássico jogo da forca que marcou nossas infâncias, agora transformado em programa de computador
+### Clássico jogo da forca que marcou nossas infâncias, agora transformado em programa.
 
 *Quem nunca brincou de forca que lance a primeira corda* 😃
 
