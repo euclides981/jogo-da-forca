@@ -42,4 +42,4 @@ No CSS dei meus primeiros passos com ***position***, bastante útil para fixar e
 
 ---
 
-## ✉ Contato [![GMAIL](https://img.shields.io/badge/-gmail-fff?style=flat&logo=gmail)](mailto:euclides981@gmail.com)&nbsp;[![Discord](https://img.shields.io/badge/-Discord-fff?style=flat&logo=discord)](https://discordapp.com/users/euclides981)&nbsp;[![Telegram](https://img.shields.io/badge/-Telegram-fff?style=flat&logo=telegram)](https://t.me/euclides981)
+## ✉ Contato &nbsp;[![GitHub](https://img.shields.io/badge/-GitHub-ccc?style=flat&logo=github)](https://github.com/euclides981)
