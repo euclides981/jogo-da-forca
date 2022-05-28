@@ -20,19 +20,19 @@ No CSS dei meus primeiros passos com ***position***, bastante útil para fixar e
 
 ### Prévia do Projeto
 
-[![Prévia do Projeto](img/previa.png)](https://github.com/euclides981/criptografia#readme)
+[![Prévia do Projeto](img/previa.png)](https://github.com/euclides981/jogo-da-forca#readme)
 
 ---
 
 ### Prévia do Projeto Executado em Smartphone
 
-[![Prévia do Projeto](img/cel.png)](https://github.com/euclides981/criptografia#readme)
+[![Prévia do Projeto](img/cel.png)](https://github.com/euclides981/jogo-da-forca#readme)
 
 ---
 
 ### Prévia do Projeto Executado em Desktop
 
-[![Prévia do Projeto](img/previa_desk.png)](https://github.com/euclides981/criptografia#readme)
+[![Prévia do Projeto](img/previa_desk.png)](https://github.com/euclides981/jogo-da-forca#readme)
 
 ---
 
