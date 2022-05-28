@@ -6,6 +6,10 @@
 
 ---
 
+### :star::star::star: &nbsp; [![Estrelas](https://shields.io/badge/Estrelas-Veja%20quem%20já%20%20deu%20estrelas%20%20E%20Deixe%20a%20sua%20Também-green)](https://github.com/euclides981/jogo-da-forca/stargazers)
+
+---
+
 ### ✍🏻 Descrição
 
 ### Clássico jogo da forca que marcou nossas infâncias, agora transformado em programa de computador
