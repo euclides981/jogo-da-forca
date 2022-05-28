@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 .container {
-    background-image: url("/img/back.svg");    
+    background-image: url("../img/back.svg");    
     height: 110vh;   
 }
 body {
