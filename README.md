@@ -40,6 +40,12 @@ No CSS dei meus primeiros passos com ***position***, bastante útil para fixar e
 
 ---
 
+### Prévia do Projeto Executado em Note
+
+[![Prévia do Projeto](img/previa_deskV.png)](https://github.com/euclides981/jogo-da-forca#readme)
+
+---
+
 ### Veja no Youtube o Projeto em Execução
 
 [![Watch the video](img/card_readme.svg)](https://www.youtube.com/watch?v=KOv3wQtPkAA)
