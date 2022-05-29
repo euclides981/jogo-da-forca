@@ -10,3 +10,9 @@ $('#digita_chute, #insere_palavra').keypress(function(e) {
       alert('Letra Não Permitida')
     }
 })
+
+function maxLen(input) {
+  if (input.value.length > 1) {
+    input.value = input.value.slice(0, 1);
+  }
+}
