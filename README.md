@@ -24,7 +24,7 @@ No CSS dei meus primeiros passos com ***position***, bastante útil para fixar e
 
 ### Prévia do Projeto
 
-[![Prévia do Projeto](img/previa.png)](https://github.com/euclides981/jogo-da-forca#readme)
+[![Prévia do Projeto](img/previa.png?#vitrinedev)](https://github.com/euclides981/jogo-da-forca#readme)
 
 ---
 
